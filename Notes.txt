@@ -1,0 +1,6 @@
+Important Notes
+
+Super User Credentials
+
+Username                Email                                               Password
+ChClaude                christ.tchambila@gmail.com                          Password#123
