@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'locallibrary',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'locallibrary',
     'catalog',
     'd3visualizations',
 ]
@@ -123,3 +123,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/'
+
+# This is only for testing purposes
+# This logs any emails sent to the console (so you can copy the password reset link from the console)
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+

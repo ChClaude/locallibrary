@@ -3,7 +3,7 @@ Important Notes
 Super User Credentials
 
 Username                Email                                               Password
-ChClaude                christ.tchambila@gmail.com                          Password#123
+ChClaude                christ.tchambila@gmail.com                          Password#1234
 
 Library Members
 John                    john@email.com                                      Password#123
