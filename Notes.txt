@@ -9,6 +9,9 @@ Library Members
 John                    john@email.com                                      Password#123
 Jane                    jane@email.com                                      Password#123
 
+Librarian
+Lys                     lys@email.com                                       Password#123
+
 
 // Authentication
 
