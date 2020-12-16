@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization | D3JS</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'd3visualizations/css/index.css' %}">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row w-100">
+        <div class="col-12 d-flex align-items-center flex-column">
+            <h1>Chart JS Data Visualizations</h1>
+            <p>This is the integration of Chart JS and Python Django</p>
+        </div>
+        <div class="col-12">
+            <div class="mx-auto w-50">
+                <canvas id="myChart" width="400" height="400" aria-label="chart"></canvas>
+            </div>
+        </div>
+        <div class="col-12 mt-5 pt-2">
+            <h3 class="text-center">C3 Charts</h3>
+            <div class="row mx-auto w-75">
+                <div class="col-12">
+                    <button class="btn btn-primary my-2" id="loadDataBtn">Load</button>
+                    <div id="chart"></div>
+                </div>
+                <div class="col-12">
+                    <div id="chart2"></div>
+                </div>
+                 <div class="col-12">
+                    <div id="chart3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+{% load static %}
+<script src="{% static 'd3visualizations/js/main.js' %}"></script>
+</body>
+</html>

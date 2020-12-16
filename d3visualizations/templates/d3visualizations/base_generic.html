@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Local Library</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'd3visualizations/css/index.css' %}">
+</head>
+<body>
+<div class="container-fluid">{% block content %}{% endblock %}</div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+{% load static %}
+<script src="{% static 'd3visualizations/js/main.js' %}"></script>
+</body>
+</html>
