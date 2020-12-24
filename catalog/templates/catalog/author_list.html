@@ -2,6 +2,9 @@
 
 {% block content %}
     <h1>Author List</h1>
+    <div class="my-2 d-flex justify-content-end w-25">
+        <a href="{% url 'author-create' %}" class="btn btn-primary">Create an Author</a>
+    </div>
     {% if author_list %}
         <ul>
             {% for author in author_list %}

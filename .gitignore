@@ -382,3 +382,4 @@ fabric.properties
 *.sqlite3
 
 .idea/
+Notes.txt
