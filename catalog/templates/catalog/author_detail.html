@@ -3,10 +3,12 @@
 {% block content %}
     <h1>Author: {{ author }} </h1>
     <p>{{ author.date_of_birth }} - {% if author.date_of_death %}{{ author.date_of_death }}{% endif %}</p>
-    <div class="d-flex justify-content-between w-25">
-        <a href="{% url 'author-update' author.pk %}" class="btn btn-secondary">Update</a>
-        <a href="{% url 'author-delete' author.pk %}" class="btn btn-danger">Delete</a>
-    </div>
+    {% if perms.catalog.can_create_update_delete_author %}
+        <div class="d-flex justify-content-between w-25">
+            <a href="{% url 'author-update' author.pk %}" class="btn btn-secondary">Update</a>
+            <a href="{% url 'author-delete' author.pk %}" class="btn btn-danger">Delete</a>
+        </div>
+    {% endif %}
     <div style="margin-left:20px;margin-top:20px">
         <h4>Books</h4>
 
