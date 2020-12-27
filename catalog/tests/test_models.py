@@ -7,7 +7,6 @@ class AuthorModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        super().setUpClass()
         Author.objects.create(first_name='Big', last_name='Bob')
 
     def test_first_name_label(self):
