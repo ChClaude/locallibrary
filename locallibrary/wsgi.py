@@ -15,7 +15,7 @@ from django.core.wsgi import get_wsgi_application
 # on Azure App Service and should use the production settings in production.py.
 # TODO: Remember to uncomment the following line to make the setting file dynamic, depending on prod or dev environments
 # settings_module = 'locallibrary.production' if 'WEBSITE_HOSTNAME' in os.environ else 'locallibrary.settings'
-settings_module = 'locallibrary.production'
+settings_module = 'locallibrary.settings'
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
 
 application = get_wsgi_application()
